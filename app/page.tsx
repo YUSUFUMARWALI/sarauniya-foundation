@@ -1,65 +1,267 @@
+﻿"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { Droplets, GraduationCap, HeartHandshake, Stethoscope, Users, MapPin } from "lucide-react";
+
+const links = [
+  ["Home", "/"],
+  ["About", "/about"],
+  ["Founder", "/founder"],
+  ["Leadership", "/leadership"],
+  ["Programs", "/programs"],
+  ["Gallery", "/gallery"],
+  ["Achievements", "/achievements"],
+  ["Contact", "/contact"],
+  ["Donate", "/donate"],
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="min-h-screen bg-[#f8f5ef] text-[#062B5F]">
+      <header className="sticky top-0 z-50 bg-white/95 shadow-sm backdrop-blur">
+        <div className="mx-auto max-w-7xl px-6 py-4">
+          <Link href="/" className="flex items-center gap-3">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/images/logo/logo.jpg"
+              alt="Sarauniya Foundation Logo"
+              width={48}
+              height={48}
+              className="rounded-full"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <span className="font-bold text-[#0B4EA2]">
+              Sarauniya Foundation
+            </span>
+          </Link>
+
+          <nav className="mt-4 flex flex-wrap justify-center gap-4 border-t border-blue-100 pt-4 text-sm font-medium">
+            {links.map(([label, href]) => (
+              <Link key={label} href={href} className="hover:text-[#B88A2E]">
+                {label}
+              </Link>
+            ))}
+          </nav>
+
+          
         </div>
-      </main>
-    </div>
+      </header>
+
+      <section className="px-6 py-16 md:px-16 lg:px-24">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p className="font-semibold uppercase tracking-[0.3em] text-[#B88A2E]">
+              Helping the Less Privileged
+            </p>
+
+            <h1 className="mt-4 text-5xl font-bold leading-tight md:text-7xl">
+              Empowering Communities, Transforming Lives.
+            </h1>
+
+            <p className="mt-6 max-w-2xl text-lg leading-9 text-gray-700">
+              Sarauniya Charity Foundation supports vulnerable communities
+              through clean water, education, healthcare, empowerment, orphan
+              support, relief aid, and community development.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/projects"
+                className="rounded-full bg-[#0B4EA2] px-7 py-3 font-semibold text-white shadow-lg"
+              >
+                View Our Impact
+              </Link>
+
+              <Link
+                href="/founder"
+                className="rounded-full border border-[#0B4EA2] px-7 py-3 font-semibold text-[#0B4EA2]"
+              >
+                Meet the Founder
+              </Link>
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] bg-white p-5 shadow-2xl">
+            <Image
+              src="/images/founder/founder.jpg"
+              alt="Hajiya Rabiatu Umar Saidu"
+              width={650}
+              height={760}
+              className="mx-auto rounded-[1.5rem] scale-x-[-1]"
+            />
+          </div>
+        </div>
+      </section>      <section className="bg-white px-6 py-14 md:px-16 lg:px-24">
+        <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-3 lg:grid-cols-6">
+          {[
+            ["3,246+", "Wells Constructed", Droplets],
+            ["720+", "Boreholes Built", Droplets],
+            ["5,000+", "Scholarships", GraduationCap],
+            ["20,000+", "Medical Beneficiaries", Stethoscope],
+            ["6,500+", "Widows Empowered", HeartHandshake],
+            ["7,000+", "Youth Empowered", Users],
+          ].map(([number, label, Icon]) => (
+            <div key={label as string} className="rounded-3xl bg-[#f8f5ef] p-6 text-center shadow-sm">
+              <Icon className="mx-auto mb-3 h-7 w-7 text-[#B88A2E]" />
+              <p className="text-3xl font-bold text-[#0B4EA2]">{number as string}</p>
+              <p className="mt-2 text-sm text-gray-600">{label as string}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-6 py-16 md:px-16 lg:px-24">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-center text-4xl font-bold">Featured Programs</h2>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {[
+              ["Water & Sanitation", "3,246 wells, 720 boreholes, and 1,000 renovated boreholes.", Droplets],
+              ["Quality Education", "Scholarships and learning support for underserved communities.", GraduationCap],
+              ["Medical Outreach", "Free healthcare outreach and support for hard-to-reach communities.", Stethoscope],
+            ].map(([title, text, Icon]) => (
+              <Link key={title as string} href="/programs" className="rounded-3xl bg-white p-8 shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+                <Icon className="h-9 w-9 text-[#B88A2E]" />
+                <h3 className="mt-5 text-2xl font-bold text-[#0B4EA2]">{title as string}</h3>
+                <p className="mt-4 leading-7 text-gray-600">{text as string}</p>
+                <span className="mt-5 inline-block font-semibold text-[#B88A2E]">Open</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#062B5F] px-6 py-16 text-white md:px-16 lg:px-24">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#B88A2E]">
+            Our Reach Across Nigeria
+          </p>
+
+          <h2 className="mt-4 text-4xl font-bold">
+            Reaching hard-to-reach communities
+          </h2>
+
+          <p className="mt-5 max-w-3xl leading-8 text-white/75">
+            SCF interventions have reached communities across Northern Nigeria and beyond, including Bauchi, Kano, Nasarawa, Jigawa, Maiduguri in Borno State, and Damagaram in Niger Republic.
+          </p>
+
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {[
+              ["Bauchi State", "Flood response, community development and founder heritage"],
+              ["Kano State", "Community support and outreach activities"],
+              ["Borno State", "Maiduguri flood response and humanitarian aid"],
+              ["Nasarawa State", "Healthcare and girls support outreach"],
+              ["Jigawa State", "Flood relief and emergency aid"],
+              ["Damagaram, Niger Republic", "Food donations to less privileged communities"],
+            ].map(([state, detail]) => (
+              <div key={state} className="rounded-3xl bg-white/10 p-6">
+                <MapPin className="mb-4 h-7 w-7 text-[#B88A2E]" />
+                <h3 className="text-xl font-bold">{state}</h3>
+                <p className="mt-3 text-sm leading-6 text-white/70">{detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>      <section className="px-6 py-16 md:px-16 lg:px-24">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-center text-4xl font-bold">
+            Impact Stories
+          </h2>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+
+            <div className="rounded-3xl bg-white p-6 shadow-lg">
+              <h3 className="text-xl font-bold text-[#0B4EA2]">
+                Aisha Salisu
+              </h3>
+              <p className="mt-4 text-gray-600">
+                A former out-of-school child whose life was transformed through educational support.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-white p-6 shadow-lg">
+              <h3 className="text-xl font-bold text-[#0B4EA2]">
+                Hamsatu Musa
+              </h3>
+              <p className="mt-4 text-gray-600">
+                Beneficiary of SCF emergency support during the Maiduguri flood disaster.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-white p-6 shadow-lg">
+              <h3 className="text-xl font-bold text-[#0B4EA2]">
+                Orphans of Azare
+              </h3>
+              <p className="mt-4 text-gray-600">
+                Ongoing educational and welfare support for vulnerable orphaned children.
+              </p>
+            </div>
+
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/impact-stories"
+              className="rounded-full bg-[#0B4EA2] px-6 py-3 font-semibold text-white"
+            >
+              View All Stories
+            </Link>
+          </div>
+        </div>
+      </section>      <section className="bg-white px-6 py-16 md:px-16 lg:px-24">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-center text-4xl font-bold">
+            Awards and Recognition
+          </h2>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="rounded-3xl bg-[#f8f5ef] p-8 shadow-lg">
+              <h3 className="font-bold text-[#0B4EA2]">
+                Award of Honor
+              </h3>
+              <p className="mt-3 text-gray-600">
+                Recognition for humanitarian service and community impact.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-[#f8f5ef] p-8 shadow-lg">
+              <h3 className="font-bold text-[#0B4EA2]">
+                Certificate of Recognition
+              </h3>
+              <p className="mt-3 text-gray-600">
+                Honouring SCF contributions to charity, advocacy and development.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-[#f8f5ef] p-8 shadow-lg">
+              <h3 className="font-bold text-[#0B4EA2]">
+                Distinguished Merit Award 2025
+              </h3>
+              <p className="mt-3 text-gray-600">
+                Awarded by the Sir Ahmadu Bello Memorial Foundation.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/awards"
+              className="rounded-full bg-[#B88A2E] px-6 py-3 font-semibold text-white"
+            >
+              View All Awards
+            </Link>
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>
   );
 }
+
+
+
+
+
+
+

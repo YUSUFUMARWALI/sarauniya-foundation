@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Droplets, GraduationCap, HeartHandshake, Stethoscope, Users, MapPin } from "lucide-react";
+import HomeHeroSlideshow from "@/components/home/HomeHeroSlideshow";
 
 const links = [
   ["Home", "/"],
@@ -58,39 +59,52 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-9 text-gray-700">
-              Sarauniya Charity Foundation supports vulnerable communities
-              through clean water, education, healthcare, empowerment, orphan
-              support, relief aid, and community development.
+              Sarauniya Charity Foundation supports vulnerable communities through
+              clean water, education, healthcare, women and youth empowerment,
+              orphan support, emergency relief, and sustainable community development.
             </p>
+
+            <div className="mt-8 grid gap-5 md:grid-cols-2">
+              <div className="rounded-3xl bg-white p-6 shadow-lg">
+                <h2 className="text-xl font-bold text-[#0B4EA2]">Mission</h2>
+                <p className="mt-3 leading-7 text-gray-600">
+                  To empower marginalized communities in Nigeria by providing access
+                  to healthcare, education, economic opportunities, clean water,
+                  sanitation, and essential humanitarian services.
+                </p>
+              </div>
+
+              <div className="rounded-3xl bg-[#062B5F] p-6 text-white shadow-lg">
+                <h2 className="text-xl font-bold text-[#B88A2E]">Vision</h2>
+                <p className="mt-3 leading-7 text-white/75">
+                  A Nigeria where every individual, regardless of background, has the
+                  opportunity to live a healthy, fulfilling, and dignified life.
+                </p>
+              </div>
+            </div>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
-                href="/projects"
+                href="/programs"
                 className="rounded-full bg-[#0B4EA2] px-7 py-3 font-semibold text-white shadow-lg"
               >
-                View Our Impact
+                Explore Programs
               </Link>
 
               <Link
-                href="/founder"
+                href="/donate"
                 className="rounded-full border border-[#0B4EA2] px-7 py-3 font-semibold text-[#0B4EA2]"
               >
-                Meet the Founder
+                Support Our Mission
               </Link>
             </div>
           </div>
 
-          <div className="rounded-[2rem] bg-white p-5 shadow-2xl">
-            <Image
-              src="/images/founder/founder.jpg"
-              alt="Hajiya Rabiatu Umar Saidu"
-              width={650}
-              height={760}
-              className="mx-auto rounded-[1.5rem] scale-x-[-1]"
-            />
-          </div>
+          <HomeHeroSlideshow />
         </div>
-      </section>      <section className="bg-white px-6 py-14 md:px-16 lg:px-24">
+      </section>
+
+      <section className="bg-white px-6 py-14 md:px-16 lg:px-24">
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-3 lg:grid-cols-6">
           {[
             ["3,246+", "Wells Constructed", Droplets],
@@ -258,6 +272,10 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+
 
 
 

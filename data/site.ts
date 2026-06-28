@@ -1,11 +1,11 @@
-export const site = {
+﻿export const site = {
   name: "Sarauniya Charity Foundation",
 
   tagline: "Transforming Lives Through Compassion & Service.",
 
-  developer: "WaliTechHub",
+  developer: "Nexora Technologies",
 
-  copyright: `© ${new Date().getFullYear()} Sarauniya Charity Foundation. All Rights Reserved.`,
+  copyright: `Â© ${new Date().getFullYear()} Sarauniya Charity Foundation. All Rights Reserved.`,
 
   socials: {
     facebook: "https://facebook.com/Sarauniyacfou",

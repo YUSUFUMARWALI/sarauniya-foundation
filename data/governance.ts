@@ -25,14 +25,16 @@ export const complianceCertificates = [
     dateIssued: "14 February 2025",
     expiryDate: "31 December 2025",
     status: "Approved",
+    file: "/documents/certificates/TCC.pdf",
   },
   {
-    title: "Temporary Operational Permit",
-    issuer: "Federal Ministry of Budget and National Planning",
-    certificateNo: "Pending Upload",
-    dateIssued: "Pending Upload",
-    expiryDate: "Pending Upload",
-    status: "Coming Soon",
+    title: "Temporary Operational Permit (TOP)",
+    issuer: "Federal Ministry of Budget and Economic Planning",
+    certificateNo: "MBNP/NGO-IC/1916/Vol.1/721",
+    dateIssued: "13 February 2025",
+    expiryDate: "12 February 2027",
+    status: "Approved",
+    file: "/documents/certificates/TOP.pdf",
   },
 ];
 

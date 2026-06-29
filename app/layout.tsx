@@ -1,7 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/components/Footer";
-import FloatingActions from "@/components/FloatingActions";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sarauniya-foundation.vercel.app"),
   title: "Sarauniya Charity Foundation",
   description:
     "Sarauniya Charity Foundation supports vulnerable communities through clean water, education, healthcare, women and youth empowerment, orphan support, emergency relief, and sustainable development.",
@@ -59,9 +59,10 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <div className="flex-1">{children}</div>
-        <Footer />
-        <FloatingActions />
-      </body>
+        <Footer /></body>
     </html>
   );
 }
+
+
+

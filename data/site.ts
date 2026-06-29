@@ -17,9 +17,11 @@
   },
 
   contact: {
-    address: "Official address coming soon",
-    phone1: "Coming Soon",
-    phone2: "Coming Soon",
-    email: "Coming Soon",
+    address:
+  "Hampton Apartment, Sorotona Close, beside Tar Tar Restaurant, Block D9, Wuse 2, Abuja.",
+phone1: "+2348021086666",
+phone2: "+2348094044442",
+phone3: "+2348027245341",
+email: "sarauniyacharityfoundation.scf@gmail.com",
   },
 };

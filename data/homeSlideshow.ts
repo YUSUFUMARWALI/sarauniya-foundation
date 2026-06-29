@@ -1,20 +1,30 @@
-﻿export const homeSlides = [
+﻿import { mediaFiles } from "@/data/mediaFiles";
+
+const fallbackSlides = [
   {
-    title: "Before & After Water Projects",
-    description: "Showing how communities moved from unsafe water sources to clean and accessible water.",
+    title: "Community Impact",
+    description: "Sarauniya Charity Foundation outreach activities across communities.",
     type: "image",
-    src: "/media/home-slideshow/before-after/before-after-1.jpg",
-  },
-  {
-    title: "Women Empowerment",
-    description: "Supporting women with skills training and start-up capital for small businesses.",
-    type: "image",
-    src: "/media/home-slideshow/women-empowerment/women-empowerment-1.jpg",
-  },
-  {
-    title: "Project Video Highlight",
-    description: "Short video highlights from Sarauniya Charity Foundation outreach activities.",
-    type: "video",
-    src: "/media/home-slideshow/videos/highlight-1.mp4",
+    src: "/images/logo/logo.jpg",
   },
 ];
+
+const picked = mediaFiles
+  .filter((item) =>
+    item.src.includes("/media/homepage/") ||
+    item.src.includes("/media/programs/water/after/") ||
+    item.src.includes("/media/programs/women/")
+  )
+  .slice(0, 8);
+
+export const homeSlides = picked.length
+  ? picked.map((item) => ({
+      title: item.category === "women" ? "Women Empowerment" : item.title,
+      description:
+        item.category === "women"
+          ? "Supporting women with skills training and start-up capital."
+          : "Documenting Sarauniya Charity Foundation humanitarian impact.",
+      type: item.type,
+      src: item.src,
+    }))
+  : fallbackSlides;

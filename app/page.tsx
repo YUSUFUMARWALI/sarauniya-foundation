@@ -11,8 +11,11 @@ const links = [
   ["Founder", "/founder"],
   ["Leadership", "/leadership"],
   ["Programs", "/programs"],
-  ["Gallery", "/gallery"],
-  ["Achievements", "/achievements"],
+  ["Media Centre", "/media"],
+  ["Impact", "/impact"],
+  ["Reports", "/reports"],
+  ["Governance", "/governance"],
+  ["Transparency", "/transparency"],
   ["Contact", "/contact"],
   ["Donate", "/donate"],
 ];
@@ -272,6 +275,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 

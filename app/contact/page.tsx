@@ -39,8 +39,8 @@ export default function ContactPage() {
             <h2 className="mt-4 text-xl font-bold text-[#0B4EA2]">
               Phone
             </h2>
-            <p className="mt-3 text-gray-600">{contact.phone1}</p>
-            <p className="mt-1 text-gray-600">{contact.phone2}</p>
+            <p className="mt-3 text-gray-600">{contact.phone}</p>
+            <p className="mt-1 text-gray-600">{contact.phoneAlt1}</p>
           </div>
 
           <div className="rounded-3xl bg-white p-7 shadow-lg">
@@ -131,3 +131,4 @@ export default function ContactPage() {
     </main>
   );
 }
+

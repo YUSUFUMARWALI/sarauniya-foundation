@@ -25,3 +25,4 @@ phone3: "+2348027245341",
 email: "sarauniyacharityfoundation.scf@gmail.com",
   },
 };
+

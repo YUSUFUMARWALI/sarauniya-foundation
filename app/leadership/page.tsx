@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { Crown, ShieldCheck, Users, BriefcaseBusiness, Megaphone, Building2 } from "lucide-react";
 
@@ -158,3 +158,4 @@ export default function LeadershipPage() {
     </main>
   );
 }
+

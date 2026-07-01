@@ -47,3 +47,4 @@ export const departments = [
   "Legal & Compliance Unit",
   "Field Operations",
 ];
+

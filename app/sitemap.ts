@@ -1,6 +1,6 @@
 ﻿import type { MetadataRoute } from "next";
 
-const baseUrl = "https://sarauniya-foundation.vercel.app";
+const baseUrl = "https://www.sarauniyacf.org";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -30,3 +30,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
   }));
 }
+

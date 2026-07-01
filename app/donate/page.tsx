@@ -326,3 +326,4 @@ Currency: ${account.currency}`;
     </main>
   );
 }
+

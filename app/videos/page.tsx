@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export default function VideosPage() {
   return (
@@ -11,3 +11,4 @@ export default function VideosPage() {
     </main>
   );
 }
+

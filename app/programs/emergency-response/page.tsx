@@ -4,3 +4,4 @@ import { emergencyProgram } from "@/data/emergency";
 export default function EmergencyResponsePage() {
   return <ProgramPage program={emergencyProgram} />;
 }
+

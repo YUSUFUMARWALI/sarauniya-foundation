@@ -28,3 +28,4 @@ export const homeSlides = picked.length
       src: item.src,
     }))
   : fallbackSlides;
+

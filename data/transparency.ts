@@ -60,3 +60,4 @@ export const accountabilityAreas = [
   "Impact Measurement",
   "Regulatory Compliance",
 ];
+

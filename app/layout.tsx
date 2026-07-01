@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sarauniya-foundation.vercel.app"),
+  metadataBase: new URL("https://www.sarauniyacf.org"),
   title: "Sarauniya Charity Foundation",
   description:
     "Sarauniya Charity Foundation supports vulnerable communities through clean water, education, healthcare, women and youth empowerment, orphan support, emergency relief, and sustainable development.",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Sarauniya Charity Foundation",
     description:
       "Transforming lives through clean water, education, healthcare, empowerment, and humanitarian support.",
-    url: "https://sarauniya-foundation.vercel.app",
+    url: "https://www.sarauniyacf.org",
     siteName: "Sarauniya Charity Foundation",
     images: [
       {
@@ -63,6 +63,7 @@ export default function RootLayout({
     </html>
   );
 }
+
 
 
 

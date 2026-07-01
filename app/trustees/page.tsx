@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 const trustees = [
   ["Haj. Rabiatu Umar Saidu", "President / Founder"],
@@ -28,3 +28,4 @@ export default function TrusteesPage() {
     </main>
   );
 }
+

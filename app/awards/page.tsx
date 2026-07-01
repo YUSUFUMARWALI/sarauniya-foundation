@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { Award, Medal, ShieldCheck } from "lucide-react";
 
@@ -94,3 +94,4 @@ export default function AwardsPage() {
     </main>
   );
 }
+

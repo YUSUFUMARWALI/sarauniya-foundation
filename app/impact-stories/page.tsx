@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 
 const stories = [
@@ -90,3 +90,4 @@ export default function ImpactStoriesPage() {
     </main>
   );
 }
+

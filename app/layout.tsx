@@ -15,9 +15,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.sarauniyacf.org"),
+
   title: "Sarauniya Charity Foundation",
+
   description:
     "Sarauniya Charity Foundation supports vulnerable communities through clean water, education, healthcare, women and youth empowerment, orphan support, emergency relief, and sustainable development.",
+
   keywords: [
     "Sarauniya Charity Foundation",
     "NGO Nigeria",
@@ -28,6 +31,13 @@ export const metadata: Metadata = {
     "Medical Outreach",
     "Humanitarian Foundation Nigeria",
   ],
+
+  verification: {
+    other: {
+      "msvalidate.01": "E2E801A692A0B660A1A1FE7415306926",
+    },
+  },
+
   openGraph: {
     title: "Sarauniya Charity Foundation",
     description:

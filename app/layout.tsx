@@ -40,24 +40,36 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Sarauniya Charity Foundation",
-    description:
-      "Transforming lives through clean water, education, healthcare, empowerment, and humanitarian support.",
-    url: "https://www.sarauniyacf.org",
-    siteName: "Sarauniya Charity Foundation",
-    images: [
-      {
-        url: "/images/logo/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Sarauniya Charity Foundation",
-      },
-    ],
-    locale: "en_NG",
-    type: "website",
-  },
-};
+  title: "Sarauniya Charity Foundation",
+  description:
+    "Helping the Less Privileged through education, healthcare, clean water, women and youth empowerment, emergency relief, and humanitarian support.",
+  url: "https://www.sarauniyacf.org",
+  siteName: "Sarauniya Charity Foundation",
+  images: [
+    {
+      url: "https://www.sarauniyacf.org/images/logo/logo.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Sarauniya Charity Foundation",
+    },
+  ],
+  locale: "en_NG",
+  type: "website",
+},
+twitter: {
+  card: "summary_large_image",
+  title: "Sarauniya Charity Foundation",
+  description:
+    "Helping the Less Privileged through education, healthcare, clean water, women and youth empowerment, emergency relief, and humanitarian support.",
+  images: ["https://www.sarauniyacf.org/images/logo/logo.jpg"],
+},
 
+icons: {
+  icon: "/images/logo/logo.jpg",
+  shortcut: "/images/logo/logo.jpg",
+  apple: "/images/logo/logo.jpg",
+},
+};
 export default function RootLayout({
   children,
 }: Readonly<{

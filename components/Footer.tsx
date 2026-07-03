@@ -122,9 +122,16 @@ export default function Footer() {
 
         <p>
           Designed and Developed by{" "}
-          <span className="font-semibold text-[#B88A2E]">{site.developer}</span>
+          <a
+            href="https://wa.me/2348148125667"
+            target="_blank"
+            className="font-semibold text-[#B88A2E] hover:text-white"
+          >
+            {site.developer}
+          </a>
         </p>
       </div>
     </footer>
   );
 }
+

@@ -4,7 +4,7 @@ const trustees = [
   ["Haj. Rabiatu Umar Saidu", "President / Founder"],
   ["Zainab Abubakar", "Trustee"],
   ["Fadila Umar Saeedu", "Trustee"],
-  ["Amb. Yusuf Yau", "Secretary"],
+  ["Hon. Yakubu Abubakar", "Secretary"],
 ];
 
 export default function TrusteesPage() {
@@ -28,4 +28,5 @@ export default function TrusteesPage() {
     </main>
   );
 }
+
 

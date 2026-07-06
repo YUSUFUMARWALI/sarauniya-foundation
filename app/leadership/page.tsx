@@ -22,10 +22,10 @@ const trustees = [
     href: "/leadership/fadila",
   },
   {
-    name: "Amb. Yusuf Yau",
+    name: "Hon. Yakubu Abubakar",
     role: "Secretary",
-    image: "/images/trustees/yusuf.jpg",
-    href: "/leadership/yusuf",
+    image: "/images/trustees/Hon. Yakubu Abubakar.jpeg",
+    href: "/leadership/yakubu",
   },
 ];
 
@@ -158,4 +158,5 @@ export default function LeadershipPage() {
     </main>
   );
 }
+
 

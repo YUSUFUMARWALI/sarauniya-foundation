@@ -25,9 +25,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/transparency",
     "/donate",
     "/contact",
+    "/news",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
   }));
 }
+
 

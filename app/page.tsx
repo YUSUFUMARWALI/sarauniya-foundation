@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -12,6 +12,7 @@ const links = [
   ["Leadership", "/leadership"],
   ["Programs", "/programs"],
   ["Media Centre", "/media"],
+  ["News", "/news"],
   ["Impact", "/impact"],
   ["Reports", "/reports"],
   ["Governance", "/governance"],

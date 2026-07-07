@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -18,6 +18,7 @@ const quickLinks = [
   ["Founder", "/founder"],
   ["Leadership", "/leadership"],
   ["Programs", "/programs"],
+  ["News", "/news"],
   ["Gallery", "/gallery"],
   ["Achievements", "/achievements"],
   ["Contact", "/contact"],

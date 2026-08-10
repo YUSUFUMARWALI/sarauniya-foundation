@@ -5,6 +5,15 @@
     "Sarauniya Charity Foundation contributes to the United Nations Sustainable Development Goals through interventions in poverty reduction, food support, healthcare, education, gender equality, clean water, economic empowerment, reduced inequalities, resilient communities, and partnerships.",
 
   reportHref: "/documents/reports/sdg-report.pdf",
+  sdg6: {
+    title: "SDG 6: Clean Water and Sanitation",
+    goal: "Ensure availability and sustainable management of water and sanitation",
+    contributions: [
+      "Construction of 3,246 hand-dug wells in hard-to-reach communities",
+      "Construction of 720 new boreholes and rehabilitation of 1,000 existing boreholes",
+      "Provision of safe and reliable drinking water to communities previously dependent on unsafe water sources",
+    ],
+  },
 
   sdgs: ["SDG 1", "SDG 2", "SDG 3", "SDG 4", "SDG 5", "SDG 6", "SDG 8", "SDG 10", "SDG 11", "SDG 17"],
 
@@ -42,4 +51,5 @@
     "Improved partnership and development alignment",
   ],
 };
+
 

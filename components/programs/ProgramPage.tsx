@@ -17,6 +17,11 @@ type ProgramData = {
   whyItMatters: string[];
   interventions: string[];
   impact?: string[];
+  sdg6?: {
+    title: string;
+    goal: string;
+    contributions: string[];
+  };
 };
 
 export default function ProgramPage({ program }: { program: ProgramData }) {
@@ -54,6 +59,45 @@ export default function ProgramPage({ program }: { program: ProgramData }) {
         </div>
       </section>
 
+      {program.sdg6 && (
+        <section className="bg-white px-6 py-16 md:px-16 lg:px-24">
+          <div className="mx-auto max-w-7xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#B88A2E]">
+              SDG 6
+            </p>
+
+            <h2 className="mt-3 text-4xl font-bold text-[#062B5F]">
+              {program.sdg6.title}
+            </h2>
+
+            <div className="mt-8 rounded-3xl bg-[#f8f5ef] p-7">
+              <p className="text-lg font-semibold text-[#0B4EA2]">
+                Goal
+              </p>
+
+              <p className="mt-3 leading-8 text-gray-700">
+                {program.sdg6.goal}
+              </p>
+            </div>
+
+            <h3 className="mt-10 text-2xl font-bold text-[#062B5F]">
+              SCF Contributions
+            </h3>
+
+            <div className="mt-6 grid gap-5">
+              {program.sdg6.contributions.map((item) => (
+                <div
+                  key={item}
+                  className="flex gap-4 rounded-3xl bg-[#f8f5ef] p-6"
+                >
+                  <CheckCircle2 className="mt-1 h-6 w-6 shrink-0 text-[#B88A2E]" />
+                  <p className="leading-8 text-gray-700">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
       <section className="px-6 py-16 md:px-16 lg:px-24">
         <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2 lg:grid-cols-4">
           {program.stats.map(([number, label]) => (
@@ -80,6 +124,7 @@ export default function ProgramPage({ program }: { program: ProgramData }) {
           </div>
         </div>
       </section>
+
 
       <section className="px-6 py-16 md:px-16 lg:px-24">
         <div className="mx-auto max-w-7xl">
@@ -112,6 +157,45 @@ export default function ProgramPage({ program }: { program: ProgramData }) {
         </section>
       )}
 
+      {program.sdg6 && (
+        <section className="bg-white px-6 py-16 md:px-16 lg:px-24">
+          <div className="mx-auto max-w-7xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#B88A2E]">
+              SDG 6
+            </p>
+
+            <h2 className="mt-3 text-4xl font-bold text-[#062B5F]">
+              {program.sdg6.title}
+            </h2>
+
+            <div className="mt-8 rounded-3xl bg-[#f8f5ef] p-7">
+              <p className="text-lg font-semibold text-[#0B4EA2]">
+                Goal
+              </p>
+
+              <p className="mt-3 leading-8 text-gray-700">
+                {program.sdg6.goal}
+              </p>
+            </div>
+
+            <h3 className="mt-10 text-2xl font-bold text-[#062B5F]">
+              SCF Contributions
+            </h3>
+
+            <div className="mt-6 grid gap-5">
+              {program.sdg6.contributions.map((item) => (
+                <div
+                  key={item}
+                  className="flex gap-4 rounded-3xl bg-[#f8f5ef] p-6"
+                >
+                  <CheckCircle2 className="mt-1 h-6 w-6 shrink-0 text-[#B88A2E]" />
+                  <p className="leading-8 text-gray-700">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
       <section className="px-6 py-16 md:px-16 lg:px-24">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center gap-3">
@@ -131,3 +215,7 @@ export default function ProgramPage({ program }: { program: ProgramData }) {
     </main>
   );
 }
+
+
+
+
